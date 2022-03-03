@@ -1,0 +1,62 @@
+html body header {
+    padding-top: 2rem;
+    color: #242324;
+    background-color: rgba(255, 251, 255, 0.9);
+}
+
+html body header h1 {
+    margin-bottom: 2rem;
+}
+
+html body header p {
+    padding: 2rem 0 2rem 0;
+    font-family: consolas;
+}
+
+html body .grid-container {
+    display: grid;
+    grid-template-areas: "menu main main main main main main";
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #3773a6;
+}
+
+html body .grid-container .menu {
+    grid-area: menu;
+    background-color: #9dd9d2;
+    color: #161e1d;
+}
+
+html body .grid-container .main {
+    grid-area: main;
+    background-color: #f4d06f;
+    color: #221d0f;
+}
+
+html body .grid-container .main main .container {
+    margin-top: 2rem;
+    text-align: left;
+}
+
+html body .grid-container .main main img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+html body .grid-container .main main h3 {
+    margin-top: 4rem;
+}
+
+html body .grid-container footer {
+    margin-top: 1rem;
+    color: #071017;
+}
+
+html body .grid-container footer p {
+    margin-top: 1rem;
+}
+
+html body .grid-container>div {
+    text-align: center;
+    padding: 1rem 0;
+}

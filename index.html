@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>Python Guide - Getting started</title>
+    <meta name="keywords" content="python, programming, programming languages, tutorial, python tutorial, guide, documentation, python guide, learn python, free, free online">
+    <meta name="description" content="A website to learn Python pythonically.">
+    <meta name="og:title" content="Catterall | Getting started">
+    <meta name="og:description" content="A website to learn Python pythonically.">
+</head>
+
+<body class="Getting started">
+    <header>
+        <center>
+            <h1 class="display-1">Python Guide</h1>
+            <img alt="python icon" src="images/python-logo.svg">
+            <p class="lead">learn_python_pythonically</p>
+        </center>
+    </header>
+    <div class="grid-container">
+        <div class="menu">
+            <p class="display-6">Topics</p>
+            <nav class="nav flex-column">
+                <a class="nav-link" href="index.html">Getting started</a>
+                <a class="nav-link" href="datatypes.html">Datatypes</a>
+            </nav>
+        </div>
+        <div class="main">
+            <main>
+                <h1 class="display-6">Getting started</h1>
+                <div class="container">
+                    <p>Python is a high-level programming language that has many applications, including machine learning, data analysis, scripting, and back-end development. Now, at this point you might already be thinking that this sounds way to complicated already. However, this is where Python shines; Python is incredibly close to the human language.</p>
+                    <p>For example, compare the images below. Both snippets of code perform the same task: printing "Hello, world!". One image is written in Python, and one is written in Java.</p>
+                    <center>
+                        <img alt="Python 'Hello, world!' snippet" src="images/python-hello-world.png">
+                        <img alt="Java 'Hello, world!' snippet" src="images/java-hello-world.png">
+                    </center>
+                    <p>This isn't to say that languages lower than Python don't have their uses; lower-level languages have greater performance, for example. However, this does show that Python is significantly easier to learn for beginners. Given that after learning one language it is a lot easier to learn another, its easy to see why Python is a great language to learn first. By learning Python first, you'll learn all the key concepts of programming, have a useful language at your disposal, and be able to learn all of this without spending ten hours memorising syntax!</p>
+                    <h3>Installing Python</h3>
+                    <p>Installing Python is pretty straight forward.
+                    <ol>
+                        <li>Go to <a href="https://www.python.org/" target="_blank">python.org</a> and download the latest version of Python for your operating system.</li>
+                        <li>Run the executable/installer.</li>
+                        <li>Before clicking "Install Now", make sure you have checked the "Add Python &hellip; to PATH" checkbox.</li>
+                        <li>After clicking "Install Now", give administrator permissions when prompted and wait for Python to install.</li>
+                    </ol> If you cannot install Python for any reason, you can follow the guide along using <a href="https://repl.it" target="_blank">repl.it, an online code editor</a>; create a repl and choose Python as the language. You can ignore the rest of this installation guide. </p>
+                    <h3>Installing an IDE</h3>
+                    <p>An IDE is essentially a big text editor for programmers — a big text editor with tons of useful features, such as syntax-highlighting, auto-completion, and debuggers. When it comes to programming, there are many different IDEs to choose from, each with their advantages and disadvantages. For Python, you can use many IDEs, such as PyCharm, Atom, Sublime Text, etc. However, during the course of this online guide, I will be using Visual Studio Code.
+                    <ol>
+                        <li>Go to <a href="https://code.visualstudio.com/download" target="_blank">code.visualstudiocode.com</a> and download the latest version of Visual Studio Code for your operating system.</li>
+                        <li>When installing, I would advise selecting the optional "Add "Open with Code" action" checkboxes. Furthermore, remember to check the "Add to PATH" checkbox.</li>
+                    </ol>
+                    </p>
+                    <h3>Visual Studio Code: Best Python extensions</h3>
+                    <p>Although optional, the following extensions are available for free in Visual Studio Code (ctrl+shift+x to view extensions tab):
+                    <ul>
+                        <li><strong>AREPL for python</strong>: AREPL allows you to view a window besides your code which will display the output of your program, as well as all variables and their values.</li>
+                        <li><strong>autoDocstring</strong>: this extension will automatically generate docstrings for Python functions, which will help with documentation.</li>
+                        <li><strong>Path Intellisense</strong>: this extension will suggest and auto-complete paths when programming, which will help make sure your correctly referencing other files.</li>
+                        <li><strong>Pylance/Python</strong>: usually installed after being prompted following Python detection, these extensions allow you to use Visual Studio Code to write in Python, properly.</li>
+                        <li><strong>python snippets</strong>: this extension features a collection of snippets of Python code, which will help speed up development.</li>
+                        <li><strong>Tabnine AI Autocomplete</strong>: this extension works with many languages. In short, it uses AI to predict what you wish to type; press TAB to confirm.</li>
+                        <li><strong>Python Indent</strong>: this extension will allow you to make optimal indents in Python, overriding Visual Studio Codes indents (which are pretty bad).</li>
+                        <li><strong>Better Comments</strong>: this extension will allow you to make better comments in Python, which will help with documentation.</li>
+                        <li><strong>Bracket Pair Colorizer 2</strong>: nested brackets can be quite confusing. Luckily, this extension gives them different colours, so you can identify them quickly.</li>
+                    </ul> You can use the F1 key to run extension commands; in general, type the extension name to view its commands. </p>
+                </div>
+            </main>
+        </div>
+        <footer>
+            <a href="https://github.com/Catterall/catterall.github.io-python-guide" target="_blank" class="btn btn-warning" role="button">View site Github</a>
+            <p>&copy; Kyle James Catterall 2022</p>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="src/js/scripts.js"></script>
+</body>
+
+</html>
