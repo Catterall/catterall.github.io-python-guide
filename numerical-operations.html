@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>Python Guide - Numerical operations</title>
+    <meta name="keywords" content="python, programming, programming languages, tutorial, python tutorial, guide, documentation, python guide, learn python, free, free online">
+    <meta name="description" content="A website to learn Python pythonically.">
+    <meta name="og:title" content="Catterall | Numerical operations">
+    <meta name="og:description" content="A website to learn Python pythonically.">
+</head>
+
+<body class="Numerical operations">
+    <header>
+        <center>
+            <h1 class="display-1">Python Guide</h1>
+            <img alt="python icon" src="images/python-logo.svg">
+            <p class="lead">learn_python_pythonically</p>
+        </center>
+    </header>
+    <div class="grid-container">
+        <div class="menu">
+            <p class="display-6">Topics</p>
+            <nav class="nav flex-column">
+                <a class="nav-link" href="index.html">Getting started</a>
+                <a class="nav-link" href="simple-datatypes.html">Simple datatypes</a>
+                <a class="nav-link" href="numerical-operations.html">Numerical operations</a>
+            </nav>
+        </div>
+        <div class="main">
+            <main>
+                <h1 class="display-6">Numerical operations</h1>
+                <div class="container">
+                    <p>Integers, like in real life, can have many operations performed on them. I'm sure we all know the common operations: addition, subtraction, multiplication, and division. However, there are also other operations, such as integer division and modulo. Every operation has its own syntax, which will be down on this page.</p>
+                    <h3>The big four: ASMD</h3>
+                    <p>Addition, subtraction, multiplication, and division. We all know what these are, you just need to know the syntax of them: + for addition, - for subtraction, * for multiplication, and / for regular division. However, it should be mentioned again that, in Python, regular division always produces a float. The code below would evaluate to 12, 8, 20, and 5.0, respectively.</p>
+                    <img alt="Python: ASMD example; addition = 10 + 2, subtraction = 10 - 2, multiplication = 10 * 2, division = 10 / 2; evaluates to 12, 8, 20, and 5.0 respectively" src="images/numerical-operations/python-asmd-example.png">
+                    <h3>Integer division</h3>
+                    <p>So, what if you want your division operation to return an integer, not a float? To do this, you can use the integer division operator, //. The code below would evaluate to 5, not 5.0. <strong>Warning: the // operator always rounds down, hence the common name 'floored division'</strong>.</strong></p>
+                    <img alt="Python: integer division example; integer_division = 10 // 2; evaluates to 5, not 5.0." src="images/numerical-operations/python-integer-division-example.png">
+                    <h3>Powers</h3>
+                    <p>In Python, to raise a numerical value to the power of another numerical value, you can use the ** operator. The code below evaluates to 25.</p>
+                    <img alt="Python: power example; power = 5 ** 2; evaluates to 25." src="images/numerical-operations/python-power-example.png">
+                    <h3>Modulo</h3>
+                    <p>The modulo operation returns the remainder of a division. For example, 25 divided by 4 is 6 remainer 1 (6&times;4=24, 24+1=25; remainder=1). So, in Python, 25 % 4 = 1. Modulo is commonly used to check whether numbers are even or odd, format times, and manipulating multiples.</p>
+                    <img alt="Python: modulo example; modulo = 25 % 4; evaluates to 1." src="images/numerical-operations/python-modulo-example.png">
+                    <h3></h3>
+                    <h3>abs(x)</h3>
+                    <p>The absolute value method, abs(x), returns the absolute value of a number x. For example, abs(2) = 2, and abs(-2) = 2; the absolute value returns the distance from a value to zero and is always positive. As you can see, the abs(x) method is often used to convert negative numbers to their positive counterpart.</p>
+                    <img alt="Python: absolute value example; absolute = abs(-2); returns 2." src="images/numerical-operations/python-absolute-value-example.png">
+                    <h3>divmod(x, y)</h3>
+                    <p>Hopefully, you remember reading about the modulo operator, %. You may have been wondering whether there was quick, pythonic method to getting the whole value and the remainder quickly, without writing multiple lines of code. Luckily for you, the divmod method returns just that. divmod(x, y) returns a tuple; the first element is the whole value of x / y, and the second element is the remainder value of x / y. For example, in the modulo explanation, we learned that 25 % 4 = 1, as 4 goes into 25 six whole times, remainder 1. Therefore, divmod(25, 4) returns (6, 1).</p>
+                    <img alt="Python: divmod example; whole_and_remainder = divmod(25, 4); returns (6, 1)." src="images/numerical-operations/python-divmod-example.png">
+                    <h3>round(x, n)</h3>
+                    <p>The round method, round(x, n), rounds a number x to the nearest n decimal places. For example, round(10.255, 1) returns 10.3, whereas round(10.255, 2) returns 10.26.</p>
+                    <img alt="Python: round example; rounded = round(10.255, 2); returns 10.26." src="images/numerical-operations/python-round-example.png">
+                </div>
+            </main>
+        </div>
+        <footer>
+            <a href="https://github.com/Catterall/catterall.github.io-python-guide" target="_blank" class="btn btn-warning" role="button">View site Github</a>
+            <p>&copy; Kyle James Catterall 2022</p>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="src/js/scripts.js"></script>
+</body>
+
+</html>
