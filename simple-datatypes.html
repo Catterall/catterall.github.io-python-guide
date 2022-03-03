@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>Python Guide - Simple datatypes</title>
+    <meta name="keywords" content="python, programming, programming languages, tutorial, python tutorial, guide, documentation, python guide, learn python, free, free online">
+    <meta name="description" content="A website to learn Python pythonically.">
+    <meta name="og:title" content="Catterall | Simple datatypes">
+    <meta name="og:description" content="A website to learn Python pythonically.">
+</head>
+
+<body class="Simple datatypes">
+    <header>
+        <center>
+            <h1 class="display-1">Python Guide</h1>
+            <img alt="python icon" src="images/python-logo.svg">
+            <p class="lead">learn_python_pythonically</p>
+        </center>
+    </header>
+    <div class="grid-container">
+        <div class="menu">
+            <p class="display-6">Topics</p>
+            <nav class="nav flex-column">
+                <a class="nav-link" href="index.html">Getting started</a>
+                <a class="nav-link" href="simple-datatypes.html">Simple datatypes</a>
+            </nav>
+        </div>
+        <div class="main">
+            <main>
+                <h1 class="display-6">Simple datatypes</h1>
+                <div class="container">
+                    <p>Datatypes describe what type of data the data you are working with is. There many different datatypes, but in this page we will go over the main types you will commonly use whilst programming in Python (excluding more complex types, such as dictionaries and sets, which will be covered further on in the guide!).</p>
+                    <h3>Integers</h3>
+                    <p>Integers describe any whole number. Integers, like in real life, can have many operations performed on them, which will be covered in the operations section. The range of the integer datatype can be described as
+                    <pre>-2147483648 &leq; int &leq; 2147483647</pre>
+                    </p>
+                    <img alt="Python: integer example" src="images/simple-datatypes/python-integer-example.png">
+                    <h3>Floats</h3>
+                    <p>The float datatype includes all decimal numbers. There are no fractions in Python; all fractions are calculated as floats. For example, 1/2 is equal to the float 0.5. Note that, during this calculation, the two integer values produced a floating value. The division operation always produces float values — again, this operation, and its integer counterpart, will be covered in the operations section. The range of the float datatype can be described as
+                    <pre>-1.7976931348623157e+308 &leq; float &leq; 1.7976931348623157e+308</pre>
+                    </p>
+                    <img alt="Python: float example" src="images/simple-datatypes/python-float-example.png">
+                    <h3>Ranges</h3>
+                    <p>Ranges are a funny datatype. When defining a range, you can define three terms: the left-most number is the starting number; the middle number is the ending number; the right-most number is the stepping number. You should note that the stopping number is never reached. The stepping number is how much the starting number increases with each step. The range datatype can be seen as producing a tuple (another datatype) of values which are determined by the three terms.</p>
+                    <img alt="Python: range example" src="images/simple-datatypes/python-range-example.png">
+                    <h3>Booleans</h3>
+                    <p>A boolean value can only be one of two things: True, or False (note that the capital letters are important). Booleans are powerful as they allow us to create conditions, which can be used to determine which code runs — this process is known as selection.</p>
+                    <center>
+                        <img alt="Python: True bool example" src="images/simple-datatypes/python-true-bool-example.png">
+                        <img alt="Python: False bool example" src="images/simple-datatypes/python-false-bool-example.png">
+                    </center>
+                    <h3>Strings</h3>
+                    <p>A string is one or more characters. For example, "HELLO" is a string. However, "123" is also a string, not an integer. To tell a value from a string containing such a value, such as True vs "True", you can look at the syntax. A string value is always enclosed within single or double quotes.</p>
+                    <img alt="Python: string example" src="images/simple-datatypes/python-string-example.png">
+                    <h3>Lists</h3>
+                    <p>A list acts as container that holds values. These values in a list are called elements. The position of an element in a list is referred to as the index of the element. For example, the first element of a list has an index of 0, the second element in a list has an index of 1, the third element in a list has an index of 2, etc. The main thing to take away from this is that indexes in Python start at 0, not 1. Furthermore, it should be mentioned that a list can hold many different datatypes.</p>
+                    <img alt="Python: list example" src="images/simple-datatypes/python-list-example.png">
+                    <h3>Tuples</h3>
+                    <p>A tuple is similar to a list. It acts as a container that holds values, and like a list it can hold different datatypes. The difference between a tuple and a list is that a tuple is immutable, whereas a list is mutable. Immutable means that the value can not be altered during run time; you cannot append a tuple, for example. Mutable means the opposite. If you're still confused, don't worry: immutability and mutability will be covered in depth later in the guide. The syntax for a tuple, unsuprisingly, is different from that for a list. A tuple is defined by its commas, not its square brackets (most programmers surround tuples in regular brackets, though this isn't actually needed!).</p>
+                    <img alt="Python: tuple example" src="images/simple-datatypes/python-tuple-example.png">
+                </div>
+            </main>
+        </div>
+        <footer>
+            <a href="https://github.com/Catterall/catterall.github.io-python-guide" target="_blank" class="btn btn-warning" role="button">View site Github</a>
+            <p>&copy; Kyle James Catterall 2022</p>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="src/js/scripts.js"></script>
+</body>
+
+</html>
