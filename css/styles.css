@@ -27,6 +27,10 @@ html body .grid-container .menu {
     color: #161e1d;
 }
 
+html body .grid-container .menu nav {
+    text-align: left;
+}
+
 html body .grid-container .main {
     grid-area: main;
     background-color: #f4d06f;

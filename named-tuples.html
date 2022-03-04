@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>Python Guide - Named tuples</title>
+    <meta name="keywords" content="python, programming, programming languages, tutorial, python tutorial, guide, documentation, python guide, learn python, free, free online">
+    <meta name="description" content="A website to learn Python pythonically.">
+    <meta name="og:title" content="Python Guide | Named tuples">
+    <meta name="og:description" content="A website to learn Python pythonically.">
+</head>
+
+<body class="Named tuples">
+    <header>
+        <center>
+            <h1 class="display-1">Python Guide</h1>
+            <img alt="python icon" src="images/python-logo.svg">
+            <p class="lead">learn_python_pythonically</p>
+        </center>
+    </header>
+    <div class="grid-container">
+        <div class="menu">
+            <p class="display-6">Topics</p>
+            <nav class="nav flex-column">
+                <a class="nav-link" href="index.html">Getting started</a>
+                <a class="nav-link" href="simple-datatypes.html">Simple datatypes</a>
+                <a class="nav-link" href="numerical-operations.html">Numerical operations</a>
+                <a class="nav-link disabled" href="#">String operations</a>
+                <a class="nav-link disabled" href="#">List operations</a>
+                <a class="nav-link disabled" href="#">Tuple operations</a>
+                <a class="nav-link disabled" href="#">Datatype conversions</a>
+                <a class="nav-link disabled" href="#">Variables</a>
+                <a class="nav-link disabled" href="#">Selection</a>
+                <a class="nav-link disabled" href="#">Iteration</a>
+                <a class="nav-link disabled" href="#">Functions</a>
+                <a class="nav-link disabled" href="#">Dictionaries</a>
+                <a class="nav-link disabled" href="#">Sets</a>
+                <a class="nav-link disabled" href="#">File I/O operations</a>
+                <a class="nav-link disabled" href="#">OOP #1: classes</a>
+                <a class="nav-link disabled" href="#">OOP #2: OOP stratergies</a>
+                <a class="nav-link disabled" href="#">OOP #3: dunder methods</a>
+                <a class="nav-link disabled" href="#">Datetime #1: datetimes</a>
+                <a class="nav-link disabled" href="#">Datetime #2: timedeltas</a>
+                <a class="nav-link disabled" href="#">Datetime #3: timezones</a>
+                <a class="nav-link" href="named-tuples.html">Collections #1: named tuples</a>
+                <a class="nav-link disabled" href="#">Collections #2: deques</a>
+                <a class="nav-link disabled" href="#">Collections #3: chain maps</a>
+                <a class="nav-link disabled" href="#">Collections #4: counters</a>
+                <a class="nav-link disabled" href="#">Collections #5: ordered dicts</a>
+                <a class="nav-link disabled" href="#">Collections #6: default dicts</a>
+                <a class="nav-link disabled" href="#">Collections #7: user dicts</a>
+                <a class="nav-link disabled" href="#">Collections #8: user lists</a>
+                <a class="nav-link disabled" href="#">Collections #9: user strings</a>
+            </nav>
+        </div>
+        <div class="main">
+            <main>
+                <h1 class="display-6">Named tuples</h1>
+                <div class="container">
+                    <p>The namedtuple(typename, field_names) returns a tuple subclass named typename, with field names specified in the iterable field_names. For example, namedtuple("Employee", ["name", "age", "email"]) returns a tuple subclass Employee with field names name, age, and email. This tuple subclass can be unpacked like a regular tuple.</p>
+                    <img alt="Creates named tuple Employee with type name &quot;Employee&quot; and field names &quot;name&quot;, &quot;age&quot;, and &quot;email&quot;. Creates instance james with values &quot;James&quot;, 22, and &quot;james@work.com&quot;. Unpacks tuple james to name, age, email." , src="images/named-tuples/python-named-tuple-example.png">
+                    <h3>Making a namedtuple() instance from an iterable</h3>
+                    <p>Lets say you have an iterable pawn = ["E", "4"]. You can create an instance of a namedtuple from this iterable using the ._make(iterable) method. In this example, let's say that your namedtuple is ChessPosition. You would be able to do pawn_instance = ChessPosition._make(pawn); pawn_instance would be an instance of ChessPosition made from the iterable pawn.</p>
+                    <img alt="Creates named tuple ChessPosition with type name &quot;ChessPosition&quot; and field names &quot;letter&quot; and &quot;number&quot;. Creates iterable pawn = [&quot;E&quot;, &quot;4&quot;]. Creates instance pawn_instance from ChessPosition._make(pawn)." , src="images/named-tuples/python-named-tuple-make-example.png">
+                    <h3>Creating a dictionary from a namedtuple() instance</h3>
+                    <p>To create a dictionary from a nametuple() instance, you can use the ._asdict() method. This method will return a dictionary that maps field names to their corrosponding values. For example, if you ran pawn_instance._asdict(), it would return {"letter": "E", "number": "4"}.</p>
+                    <img alt="From the previous example, creates a dictionary pawn_dict from pawn_instance by doing pawn_dict = pawn_instance.asdict()." , src="images/named-tuples/python-named-tuple-asdict-example.png">
+                    <h3>Converting a dictionary to a namedtuple()</h3>
+                    <p>To convert a dictionary to a named tuple, you can use NamedTupleSubClass(**dict). To explain this syntax further, take the previous example. There is a namedtuple subclass ChessPosition. If I have a dictionary position = {"letter": "E", "number": "4"}, then I can convert position to an instance of ChessPosition by doing ChessPosition(**position). Of course, I could also set this to a variable. For example, pawn_instance = ChessPosition(**position). In this case, pawn_instance is identical to the pawn_instance we created before; they both have the same field_names and corrosponding values.</p>
+                    <img alt="Creates named tuple ChessPosition with type name &quot;ChessPosition&quot; and field names &quot;letter&quot; and &quot;number&quot;. Creates dictionary position = {&quot;letter&quot;: &quot;E&quot;, &quot;number&quot;: &quot;4&quot;}. Creates pawn_instance from ChessPosition(**position)." src="images/named-tuples/python-named-tuple-dictionary-to-instance-example.png">
+                    <h3>Replacing a field's value</h3>
+                    <p>A fields value can be replaced using the ._replace(**kwargs) method. For example, if item is an instance of of Items, where Items = namedtuple("Items", ["name", "price"]) then you could replace the value for name for item via item = item._replace(name="new_value").</p>
+                    <img alt="Creates named tuple Items with type name &quot;Items&quot; and field names &quot;name&quot; and &quot;price&quot;. Creates dictionary position = {&quot;letter&quot;: &quot;E&quot;, &quot;number&quot;: &quot;4&quot;}. Creates instance item with values &quot;chocolates&quot; and 1.00. Replaces &quot;chocolate&quot; with &quot;cheese&quot; via item = item._replace(name=&quot;cheese&quot;)." src="images/named-tuples/python-named-tuples-replace-example.png">
+                    <h3>Getting a tuple of strings listing field names</h3>
+                    <p>To get a tuple of strings listing field names, you can use the ._fields attribute. For example, if there is a namedtuple subclass instance p, then p._fields will be equal to a tuple of strings listing the field names of p.</p>
+                    <img alt="Creates named tuple Point with type name &quot;Point&quot; and field names &quot;x&quot; and &quot;y&quot;. Creates instance p with values 1 and 2. Sets p_fields to p._fields. Therefore, p_fields = (&quot;x&quot;, &quot;y&quot;)." , src="images/named-tuples/python-named-tuples-fields-example.png">
+                    <h3>Field defaults</h3>
+                    <p>The ._field_defaults attribute is a dictionary that maps fields to default values. For example, if Account = namedtuple("Account", ["type", "bal"], defaults=[5.0]), then Account._field_defaults = {"bal": 5.0}.</p>
+                    <img alt="Creates named tuple Account with type name &quot;Account&quot;, field names &quot;type&quot; and &quot;bal&quot;, and defaults=[5.0]. Sets bal to Account._field_defaults. Therefore, bal = {&quot;bal&quot;: 5.0}." , src="images/named-tuples/python-named-tuples-field-defaults-example.png">
+                    <h3>Changing subclass functionality.</h3>
+                    <p>As mentioned at the start of this page, namedtuple() creates a subclass named typename. Because of this, we can change the functionality of said subclass as follows. Firstly, we must create a class Typename(namedtuple("Typename", ["field_name"])). Notice that the class name and the type name are the same. Following this, we will set __slots()__ to be an empty tuple. This prevents the creation of instance dictionaries, which will lower memory usage as a result. From there, you are free to introduce as much functionality as you want. Here's an example from the collections docs.</p>
+                    <img alt="See description above." src="images/named-tuples/python-named-tuples-subclass-modification-example.png">
+                </div>
+            </main>
+        </div>
+        <footer>
+            <a href="https://github.com/Catterall/catterall.github.io-python-guide" target="_blank" class="btn btn-warning" role="button">View site Github</a>
+            <p>&copy; Kyle James Catterall 2022</p>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="src/js/scripts.js"></script>
+</body>
+
+</html>
